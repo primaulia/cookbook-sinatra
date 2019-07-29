@@ -1,0 +1,19 @@
+<h1>Welcome to Cookbook!</h1>
+
+<!-- no equal == no print -->
+<ul>
+<% @all_recipes.each do |recipe| %> <!-- er + tab -->
+  <li>
+    <h3>
+      <%= recipe.name  %> (<%= recipe.prep_time %>)
+    </h3>
+    <p><%= recipe.description %></p>
+  </li> <!-- pe + tab -->
+<% end %>
+</ul>
+
+<%#
+  all_recipes.each do |recipe|
+    puts recipe.name
+  end
+%>
